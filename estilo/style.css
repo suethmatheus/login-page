@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+:root {
+    --font-padrao: 'Poppins', sans-serif;
+    --cor01: #A4F5EC;
+    --cor02: #01B399;
+    --cor03: #385A64;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #A4F5EC, #eafffd);
+}
+
+section.container {
+    background-color: white;
+    width: 85vw;
+    height: 75vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+}
+
+div.imagem>div.txt {
+    text-align: center;
+    font-family: var(--font-padrao);
+    color: var(--cor03);
+}
+
+div.imagem>div.txt>p {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+div.imagem {
+    background-image: url(../imagens/img-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    width: 40%;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+div.infos {
+    border: 2px solid #A4F5EC;
+    height: 60vh;
+    width: 28vw;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+div.infos h1 {
+    font-family: var(--font-padrao);
+    color: var(--cor03);
+    text-align: center;
+    margin-top: 11vh;
+    margin-bottom: 8%;
+}
+
+div.campo>label {
+    color: var(--cor03);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 2.5px;
+}
+
+div.campo>input {
+    display: block;
+    margin: auto;
+    width: 75%;
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    padding: 5px 5px 5px 35px;
+    outline: 0;
+}
+
+div#usu>input {
+    margin-bottom: 5%;
+}
+
+div#sen>input {
+    margin-bottom: 8%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    border-style: none;
+    background-color: var(--cor03);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #385a64e3;
+}
+
+p {
+    font-family: var(--font-padrao);
+    font-size: 0.6em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8%;
+    color: var(--cor03);
+}
+
+p a {
+    text-decoration: none;
+    color: var(--cor03);
+    font-weight: 600;
+}
+
+p a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}

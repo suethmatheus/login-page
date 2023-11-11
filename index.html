@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Entre ou Cadastre-se</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+
+            <div class="imagem">
+                <div class="txt">
+                    <h1>OLÁ AMIGOS!</h1>
+                    <p>Insira seus dados e entre nessa jornada conosco.</p>
+                </div>
+            </div>
+
+            <div class="infos">
+                <h1>Login</h1>
+                <form action="login.php">
+
+                    <div class="campo" id="usu">
+                        <label for="iusu"><span class="material-symbols-outlined">
+                                person
+                            </span></label>
+                        <input type="text" name="usu" id="iusu" placeholder="usuário" required>
+                    </div>
+
+                    <div class="campo" id="sen">
+                        <label for="isen"><span class="material-symbols-outlined">
+                                lock
+                            </span></label>
+                        <input type="password" name="sen" id="isen" placeholder="senha" required>
+                    </div>
+
+                    <input type="submit" value="LOGIN">
+
+                    <p>Não tem uma conta? <a href="#">Cadastre-se aqui!</a></p>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
