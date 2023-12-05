@@ -29,7 +29,7 @@ main {
 section.container {
     background-color: white;
     border-radius: 30px;
-    width: 55vw;
+    width: 250px;
     height: 75vh;
 
     position: absolute;
